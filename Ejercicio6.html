@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="./cargando.png" id="cargando">
+    <!--El texto se deja en display none para que no se muestre en un principio-->
+    <p id="texto" style="display: none;">Este texto se muestra cuando se haya cargado la imagen</p>
+    <script>
+        //Se crea un evento llamado load y que ejecute la funcion
+        window.addEventListener('load',function(){
+            //Se muestra la imagen
+            document.getElementById("cargando").style.display = "block"
+        setTimeout(function() {
+            //Oculta la imagen de carga
+            document.getElementById("cargando").style.display = "none"
+            //Muestra el texto del contenido
+            document.getElementById("texto").style.display ="block"
+        },2000)
+        
+        })
+        
+            
+        
+
+    </script>
+    
+</body>
+</html>

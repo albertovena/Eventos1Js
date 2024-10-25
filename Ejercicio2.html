@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mostrarTexto(){
+            var nuevoTexto = "Hola Mundo"
+            document.getElementById("nuevoTexto").innerHTML = nuevoTexto
+        }
+    </script>
+    <h1 id="h1">Al pulsar el boton se debe desencadenar la funcion</h1>
+    <input type="button" id="boton" value="Pulsame" onclick="mostrarTexto()">
+    <p id="nuevoTexto"></p> <!--Esto se hace para que aparezca el texto abajo del boton y que esté vacio
+    el document.write reemplaza todo el texto-->
+</body>
+</html>
