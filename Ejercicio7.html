@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function cambia1(){
+            document.getElementById("azul").style.backgroundColor = "#0000FF";
+        }
+        function cambiaOriginal(){
+            document.getElementById("body").style.backgroundColor = "#0000FF";
+        }
+    </script>
+    <div>
+        <img src="./1.png" id="azul" onmouseover="cambia1()">
+        <img src="./2.png" id="amarillo">
+        <img src="./3.png" id="rojo">
+        <img src="./4.png" id="verde">
+        <img src="./5.png" id="azulClaro">
+        <div id="body" onmouseout="cambiaOriginal()">
+    </div>
+</body>
+</html>
